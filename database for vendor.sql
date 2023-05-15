@@ -48,3 +48,8 @@ CREATE TABLE ratings (
   PRIMARY KEY (id),
   FOREIGN KEY (vendor_id) REFERENCES vendors (id)
 );
+
+INSERT INTO vendors (name, contact_name, contact_email, contact_phone, website)
+VALUES ('Acme Corporation', 'John Smith', 'john.smith@acme.com', '123-456-7890', 'www.acme.com');
+
+
