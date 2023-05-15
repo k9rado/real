@@ -14,6 +14,9 @@ CREATE TABLE products (
   name VARCHAR(255) NOT NULL,
   description VARCHAR(255) NOT NULL,
   price DECIMAL(10, 2) NOT NULL,
+	`order_id` INT NOT NULL,
+	`product_id` INT NOT NULL,
+	`quantity` INT NOT NULL,
   PRIMARY KEY (id),
   FOREIGN KEY (vendor_id) REFERENCES vendors (id)
 );
